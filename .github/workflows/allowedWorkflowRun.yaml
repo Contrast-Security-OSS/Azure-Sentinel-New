@@ -10,6 +10,9 @@ on:
 env:
   ALLOWED_USERS: "${{ vars.ALLOWEDUSERS }}"
 
+permissions:
+  contents: read
+
 jobs:
   allowedWorkflowRunUsers:
     if: ${{ !github.event.pull_request.head.repo.fork }}
@@ -18,6 +21,11 @@ jobs:
     outputs:
       isWorkflowRunAllowed: ${{ steps.getWorkflowRunAllowedStatus.outputs.isWorkflowRunAllowed }}
     steps:
+      - name: Harden the runner (Audit all outbound calls)
+        uses: step-security/harden-runner@a5ad31d6a139d249332a2605b85202e8c0b78450 # v2.19.1
+        with:
+          egress-policy: audit
+
       - name: Is Current User Allowed
         shell: pwsh
         id: getWorkflowRunAllowedStatus

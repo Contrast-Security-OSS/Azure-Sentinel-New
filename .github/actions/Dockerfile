@@ -1,5 +1,5 @@
 
-FROM mcr.microsoft.com/powershell:latest
+FROM mcr.microsoft.com/powershell:latest@sha256:810c4f1e0c9d23022c3ec18c50a6205ee4b60766f1739d329b2948df1fd7d5b0
 
 ARG SolutionName
 
