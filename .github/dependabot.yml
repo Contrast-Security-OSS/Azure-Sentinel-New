@@ -1,0 +1,3323 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /ASIM/dev/ASimYaml2ARM
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /DataConnectors/AWS-CloudTrail-AzureFunction
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /DataConnectors/AWS-S3-AzureFunction
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /DataConnectors/AWS-SecurityHubFindings
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /DataConnectors/Templates/Connector_REST_API_AzureFunctionApp_template/Template_REST_API_AzureFunction_App_Code/Template_REST_API_Function_App_Python
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/AWS Systems Manager/Playbooks/CustomConnector/AWS_SSM_FunctionAppConnector
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/AWSAthena/Playbooks/CustomConnector/AWSAthena_FunctionAppConnector
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/AWS_IAM/Playbooks/AWS_IAM_FunctionAppConnector
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/AbnormalSecurity/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Alibaba Cloud/DataConnectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Armis/Data Connectors/ArmisActivities
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Armis/Data Connectors/ArmisAlerts
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Armis/Data Connectors/ArmisAlertsActivities
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Armis/Data Connectors/ArmisDevice
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Armorblox/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/AtlassianConfluenceAudit/Data Connectors/AtlassianConfluenceAuditDataConnector
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/AtlassianJiraAudit/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Auth0/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Authomize/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/BitSight/Data Connectors/BitSightDataConnector
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Bitglass/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/BloodHound Enterprise/Data Connectors/BloodHoundDataConnector
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Box/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/CTM360/Data Connectors/CBS
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/CTM360/Data Connectors/HackerView
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Cisco ETD/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Cisco Secure Endpoint/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/CiscoDuoSecurity/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/CiscoUmbrella/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Cloudflare/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/CofenseIntelligence/Data Connectors/CofenseIntelligenceDataConnector
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/CofenseTriage/Data Connectors/CofenseTriageDataConnector
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/CognyteLuminar/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Commvault Security IQ/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/ContrastADR/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/CrowdStrike Falcon Endpoint Protection/Data Connectors/CrowdStrikeFalconAdversaryIntelligence
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/CrowdStrike Falcon Endpoint Protection/Data Connectors/CrowdstrikeReplicatorCLv2/CrowdstrikeFalconAPISentinelConn
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/CyberArkAudit/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/CyberArkEPM/DataConnectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Cybersixgill-Actionable-Alerts/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/CyeraDSPM/Data Connectors/CyeraDSPM_Functions/AzureFunction
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Dataminr Pulse/Data Connectors/DataminrPulseAlerts
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Digital Shadows/Data Connectors/Digital Shadows
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/DomainTools/Playbooks/CustomConnector/DomainTools_FunctionAppConnector
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/ESET Inspect/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/ESET Protect Platform/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/ExtraHop/Data Connectors/ExtraHopDataConnector
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Feedly/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Fortinet FortiNDR Cloud/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/GitHub/Data Connectors/GithubWebhook
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Google Apigee/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Google Cloud Platform Cloud Monitoring/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/GoogleCloudPlatformDNS/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/GoogleCloudPlatformIAM/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/GoogleWorkspaceReports/Data Connectors/GWorkspaceReportsAPISentinelConn
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/GoogleWorkspaceReports/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/GreyNoiseThreatIntelligence/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/HYAS Protect/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/HolmSecurity/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/IPinfo/Data Connectors/ASN
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/IPinfo/Data Connectors/Abuse
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/IPinfo/Data Connectors/Carrier
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/IPinfo/Data Connectors/Company
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/IPinfo/Data Connectors/Country ASN
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/IPinfo/Data Connectors/Domain
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/IPinfo/Data Connectors/Iplocation Extended
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/IPinfo/Data Connectors/Iplocation
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/IPinfo/Data Connectors/Privacy Extended
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/IPinfo/Data Connectors/Privacy
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/IPinfo/Data Connectors/RIRWHOIS
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/IPinfo/Data Connectors/RWHOIS
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/IPinfo/Data Connectors/WHOIS ASN
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/IPinfo/Data Connectors/WHOIS MNT
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/IPinfo/Data Connectors/WHOIS NET
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/IPinfo/Data Connectors/WHOIS ORG
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/IPinfo/Data Connectors/WHOIS POC
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/IllumioSaaS/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/ImpervaCloudWAF/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Infoblox/Data Connectors/InfobloxCloudDataConnector
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Lookout Cloud Security Platform for Microsoft Sentinel/Data Connectors/LookoutCSConnector
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Lookout/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Lumen Defender Threat Feed/Data Connectors/LumenThreatFeed/LumenThreatFeedConnector
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Mimecast/Data Connectors/MimecastAT
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Mimecast/Data Connectors/MimecastAudit
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Mimecast/Data Connectors/MimecastCloudIntegrated
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Mimecast/Data Connectors/MimecastSEG
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Mimecast/Data Connectors/MimecastTTP
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/MimecastAudit/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/MimecastSEG/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/MimecastTIRegional/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/MimecastTTP/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/MongoDBAtlas/Data Connectors/MongoDBAtlasLogs
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Mulesoft/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Netskopev2/Data Connectors/NetskopeDataConnector
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Neustar IP GeoPoint/Playbooks/NeustarIPGeoPoint_FunctionAppConnector
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/OneLoginIAM/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Open Systems/DataConnectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Oracle Cloud Infrastructure/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/PDNS Block Data Connector/DataConnectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/PaloAltoPrismaCloud/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Proofpoint On demand(POD) Email Security/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Rapid7InsightVM/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/RubrikSecurityCloud/Data Connectors/RubrikWebhookEvents
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/SailPointIdentityNow/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Salesforce Service Cloud/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/SecurityScorecard Cybersecurity Ratings/Data Connectors/SecurityScorecardFactor
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/SecurityScorecard Cybersecurity Ratings/Data Connectors/SecurityScorecardIssue
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/SecurityScorecard Cybersecurity Ratings/Data Connectors/SecurityScorecardRatings
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/SentinelOne/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/SlackAudit/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/SlashNext/DataConnectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Snowflake/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Sophos Endpoint Protection/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Team Cymru Scout/Data Connectors/TeamCymruScout
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Tenable App/Data Connectors/TenableVM
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/TenableIO/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/TheHive/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/TransmitSecurity/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Trend Micro Cloud App Security/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Trend Micro Vision One/Data Connectors/AzureFunctionTrendMicroXDR
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Trend Micro Vision One/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/VMRay/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/VMRay/Playbooks/CustomConnector/VMRayEnrichment_FunctionAppConnector
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/VMware SD-WAN and SASE/Data Connectors/Function App Connector
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Vectra XDR/Data Connectors/VectraDataConnector
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/WithSecureElementsViaFunction/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/Workplace from Facebook/Data Connectors/WorkplaceFacebook
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/ZeroFox/Data Connectors/CTI/AzureFunctionZeroFoxCTI
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/ZeroFox/Data Connectors/CTI
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Solutions/ZoomReports/Data Connectors
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: pip
+    directory: /Tools/WatchlistAutoUpdateFromNetworkRestrictedBlob
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
+    groups:
+      dev-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: development
+      production-dependencies:
+          applies-to: version-updates
+          patterns:
+              - '*'
+          dependency-type: production
+    cooldown:
+      default-days: 7
+      semver-major-days: 30
+      semver-minor-days: 14
+      semver-patch-days: 5
+      include:
+          - '*'
+      exclude:
+          - react

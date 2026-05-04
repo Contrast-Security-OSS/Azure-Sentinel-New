@@ -6,6 +6,9 @@ on:
             - master
     # Allows to run workflow manually from the Actions tab
     workflow_dispatch:
+permissions:
+  contents: read
+
 jobs:
     PlaybooksValidations:
       runs-on: ubuntu-latest
@@ -18,7 +21,12 @@ jobs:
         GITHUBAPPPRIVATEKEY: ${{ secrets.APPLICATION_PRIVATE_KEY }}
         SYSTEM_PULLREQUEST_ISFORK: ${{ github.event.pull_request.head.repo.fork }}
       steps:
-      - uses: actions/checkout@v4
+      - name: Harden the runner (Audit all outbound calls)
+        uses: step-security/harden-runner@a5ad31d6a139d249332a2605b85202e8c0b78450 # v2.19.1
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
       - run: npm install -g npm@6.14.18;which npm;npm -v
       - name: npm install
         run: npm install

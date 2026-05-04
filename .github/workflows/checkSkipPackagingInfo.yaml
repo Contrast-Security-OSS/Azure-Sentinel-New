@@ -15,6 +15,9 @@ on:
 env:
   BRANCH_NAME: ${{ github.event.client_payload.pull_request.head.ref || github.event.client_payload.pullRequestBranchName }}
 
+permissions:
+  contents: read
+
 jobs:
   checkPackagingInfoStatus:
     name: Check If Packaging Need to skip
@@ -22,6 +25,11 @@ jobs:
     outputs:
       isPackagingRequired: ${{ steps.getPackagingSkipStatus.outputs.isPackagingRequired }}
     steps:
+      - name: Harden the runner (Audit all outbound calls)
+        uses: step-security/harden-runner@a5ad31d6a139d249332a2605b85202e8c0b78450 # v2.19.1
+        with:
+          egress-policy: audit
+
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
         with:
           fetch-depth: 2
